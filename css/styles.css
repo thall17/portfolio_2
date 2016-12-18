@@ -1,12 +1,20 @@
 /* defaults */
 body {
-  font-family: 'Lato', sans-serif;
-  color: #747704;
+  font-family: 'Lato Thin', sans-serif;
+  color: #2d3c49;
   font-weight: 300;
 }
 
+.top-hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #7d97ad; /* old IE */
+  background-color: #7d97ad; /* Modern Browsers */
+}
+
 .text-muted {
-  color: #BCBBBB;
+  color: #7d97ad;
 }
 
 .text-thin {
@@ -24,14 +32,3 @@ body {
 .modal-link {
   cursor: pointer;
 }
-
-/*
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-}
-
-p, div {
-  font-family: 'Lato', sans-serif;
-}
-
-*/
