@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
     <title>Tim Hall</title>
 
     <!-- Bootstrap -->
@@ -23,65 +25,68 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="title-logo img-responsive" src="http://placehold.it/100x100">
+      <header>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="title-logo img-responsive" src="images/headshot.jpg">
+          </div>
+          <div class="col-md-6 text-right text-uppercase">
+            <h1 class="title-super text-thin">Tim Hall</h1>
+            <h4 class="text-thin">Developer</h4>
+          </div>
         </div>
-        <div class="col-md-6 text-right text-uppercase">
-          <h1 class="title-super text-thin">Tim Hall</h1>
-          <h4 class="text-thin">Software Developer</h4>
-        </div>
-      </div>
+      </header>
       <div class="row">
         <div class="col-md-12">
           <hr class="top-hr">
         </div>
       </div>
-      <div class="row">
+      <main class="row">
         <div class="col-md-12">
           <img class="img-responsive" src="images/code.jpg" alt="Main picture">
         </div>
-      </div>
+      </main>
       <div class="row">
         <div class="col-md-12 text-uppercase">
           <h2 class="text-muted">Featured Work</h2>
         </div>
       </div>
-      <div class="row text-center">
+      <section class="row text-center">
         <div class="col-md-4">
-          <img class="img-responsive modal-link" src="http://placehold.it/400x400" alt="Appify picture" data-toggle="modal" data-target="#appify">
-          <h3 class="text-uppercase">Appify</h3>
+          <img class="img-responsive modal-link" src="images/backpacks.jpeg" alt="PackTracker picture" data-toggle="modal" data-target="#packtracker">
+          <h3 class="text-uppercase">PackTracker</h3>
           <p>
-            https://github.com/udacity/appify
+            <a href="https://pack-tracker.herokuapp.com">https://pack-tracker.herokuapp.com</a>
           </p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="http://placehold.it/400x400" alt="Sunflower picture">
+          <img class="img-responsive modal-link" src="images/sunflower.jpg" alt="Sunflower picture" data-toggle="modal" data-target="#sunflower">
           <h3 class="text-uppercase">Sunflower</h3>
           <p>
-            https://github.com/udacity/sunflower
+            <a href="https://github.com/udacity/sunflower">https://github.com/udacity/sunflower</a>
           </p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="http://placehold.it/400x400" alt="Bokeh picture">
+          <img class="img-responsive modal-link" src="images/bokeh.jpg" alt="Bokeh picture" data-toggle="modal" data-target="#bokeh">
           <h3 class="text-uppercase">Bokeh</h3>
           <p>
-            https://github.com/udacity/Bokeh
+            <a href="https://github.com/udacity/Bokeh">https://github.com/udacity/Bokeh</a>
           </p>
         </div>
-      </div>
+      </section>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modals -->
+    <!-- First Modal -->
+    <div class="modal fade" id="packtracker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="myModalLabel">PackTracker</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placehold.it/400x400">
-                    This was my first project in this class. I learned a lot about HTML and CSS.
+                    <img class="img-responsive" src="images/backpacks.jpeg">
+                    This was my first project in the UW Ruby on Rails developer program.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -89,5 +94,42 @@
             </div>
         </div>
     </div>
+    <!-- /First Modal -->
+    <!-- Second Modal -->
+    <div class="modal fade" id="sunflower" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Sunflower</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/sunflower.jpg">
+                    This was my second project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Second Modal -->
+    <!-- Third Modal -->
+    <div class="modal fade" id="bokeh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Boeh</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/bokeh.jpg">
+                    This was my third project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Third Modal -->
   </body>
 </html>
